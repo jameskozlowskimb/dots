@@ -43,6 +43,10 @@ return {
             "toml",
             "vimdoc",
             "yaml",
+            "rust",
+            "typescript",
+            "javascript",
+            "css"
         },
         incremental_selection = {
             enable = true,

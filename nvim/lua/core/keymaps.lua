@@ -51,6 +51,7 @@ map("n", "<leader>ff", ":Telescope find_files<cr>", { desc = "Fuzzy find files" 
 map("n", "<leader>fr", ":Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 map("n", "<leader>fs", ":Telescope live_grep<cr>", { desc = "Find string in CWD" })
 map("n", "<leader>fc", ":Telescope grep_string<cr>", { desc = "Find string under cursor in CWD" })
+map("n", "<leader>fb", ":Telescope buffers<cr>", { desc = "Fuzzy find buffers" })
 
 --keywordprg
 map("n", "<leader>K", ":norm! K<cr>", { desc = "Keywordprg" })

@@ -16,7 +16,7 @@ end
 
 -- UI/General
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 opt.ignorecase = true
 opt.cursorline = true
 opt.clipboard = "unnamedplus"

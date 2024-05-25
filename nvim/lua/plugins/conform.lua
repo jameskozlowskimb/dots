@@ -18,6 +18,7 @@ return {
                 sh = { "shfmt" },
                 toml = { "taplo" },
                 yaml = { "prettier" },
+                rust = { "rustfmt" },
             },
 
             format_after_save = function()

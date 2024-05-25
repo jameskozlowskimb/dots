@@ -31,10 +31,19 @@ return {
             "tailwindcss",
             "taplo",
             "yamlls",
+            "typescript",
         }
         for _, server in pairs(no_config_servers) do
             require("lspconfig")[server].setup({})
         end
+
+        local lspconfig = require('lspconfig')
+        lspconfig.rust_analyzer.setup {
+          -- Server-specific settings. See `:help lspconfig-setup`
+          settings = {
+            ['rust-analyzer'] = {},
+          },
+        }
 
         -- Go
         require("lspconfig").gopls.setup({
