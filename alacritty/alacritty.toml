@@ -1,7 +1,7 @@
-import = ["/home/scott/.config/alacritty/cyberdream.toml"]
+import = ["~/.config/alacritty/cyberdream.toml"]
 
 [font]
-size = 10.0
+size = 12.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
