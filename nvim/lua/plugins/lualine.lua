@@ -2,8 +2,8 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function()
-        local colors = require("cyberdream.colors").default
-        local cyberdream = require("lualine.themes.cyberdream")
+        local colors = require("tokyonight.colors").setup()
+        local tokyonight = require("lualine.themes.tokyonight")
         local copilot_colors = {
             [""] = { fg = colors.grey, bg = colors.none },
             ["Normal"] = { fg = colors.grey, bg = colors.none },
@@ -14,7 +14,7 @@ return {
             options = {
                 component_separators = { left = " ", right = " " },
                 section_separators = { left = " ", right = " " },
-                theme = cyberdream,
+                theme = tokyonight,
                 globalstatus = true,
                 disabled_filetypes = { statusline = { "dashboard", "alpha" } },
             },
