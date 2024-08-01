@@ -31,7 +31,6 @@ return {
             "tailwindcss",
             "taplo",
             "yamlls",
-            "typescript",
         }
         for _, server in pairs(no_config_servers) do
             require("lspconfig")[server].setup({})
@@ -39,11 +38,17 @@ return {
 
         local lspconfig = require('lspconfig')
         lspconfig.rust_analyzer.setup {
-          -- Server-specific settings. See `:help lspconfig-setup`
-          settings = {
-            ['rust-analyzer'] = {},
-          },
+            -- Server-specific settings. See `:help lspconfig-setup`
+            settings = {
+                ['rust-analyzer'] = {},
+            },
         }
+
+        require("lspconfig").tsserver.setup {
+            on_attach = on_attach,
+            filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+            cmd = { "typescript-language-server", "--stdio" }
+        } 
 
         -- Go
         require("lspconfig").gopls.setup({

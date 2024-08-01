@@ -2,7 +2,7 @@ return {
     "stevearc/conform.nvim",
     event = "BufReadPre",
     config = function()
-        vim.g.disable_autoformat = false
+        vim.g.disable_autoformat = true
         require("conform").setup({
             formatters_by_ft = {
                 bicep = { "bicep" },

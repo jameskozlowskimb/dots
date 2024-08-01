@@ -47,4 +47,6 @@ sudo tar -C /opt -xzf nvim-linux64.tar.gz
 sudo rm /bin/nvim
 sudo ln -s /opt/nvim-linux64/bin/nvim /bin/nvim
 
+npm install -g typescript-language-server typescript
+
 echo "Done!"
