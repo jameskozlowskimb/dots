@@ -134,3 +134,9 @@ if vim.g.neovide then
     map({ "n", "v" }, "<C-v>", '"+gP', { desc = "Paste from clipboard" })
     map({ "i", "t" }, "<C-v>", '<esc>"+gP', { desc = "Paste from clipboard" })
 end
+
+
+map('n', '<leader>en', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+
+-- Keybinding to focus on NvimTree
+map('n', '<leader>ef', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
